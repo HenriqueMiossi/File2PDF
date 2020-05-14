@@ -14,7 +14,10 @@
             <h1>Converta arquivos em <strong>PDF</strong></h1>
             <div id="whiteSquare"></div>
             <div id="graySquare">
-                <input type="file" name="inputFile" accept="image/png, image/jpeg" class="inputFile"></input>
+                <form action="_php/upload.php" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="inputFile" class="inputFile">
+                    <input type="submit" value="Enviar Arquivo" name="submit" class="submitButton">
+                </form>
             </div>
         </div>
 

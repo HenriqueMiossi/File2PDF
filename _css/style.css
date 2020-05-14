@@ -55,5 +55,20 @@
 }
 
 .inputFile {
+    background-color: #F0F0F0;
+    border: none;
+    color: royalblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.submitButton {
+    background-color: royalblue;
+    border: none;
+    color: #F0F0F0;
+    padding: 14px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
     font-size: 20px;
 }
