@@ -24,6 +24,10 @@
     bottom: -8.5em; left: 50%;
     transform: translateX(-50%);
 
+    border-radius: 5px;
+}
+
+.shadow {
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.030),
     0 6.7px 5.3px rgba(0, 0, 0, 0.044),
@@ -31,8 +35,6 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.068),
     0 41.8px 33.4px rgba(0, 0, 0, 0.082),
     0 100px 80px rgba(0, 0, 0, 0.08);
-
-    border-radius: 5px;
 }
 
 #graySquare {
@@ -62,7 +64,7 @@
     font-size: 20px;
 }
 
-.submitButton {
+.blueButton {
     background-color: royalblue;
     border: none;
     color: #F0F0F0;
