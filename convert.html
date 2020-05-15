@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File2PDF</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
     <div class="container">
         <div class="top">
-            <h1>Converta arquivos em <strong>PDF</strong></h1>
+            <h1>Seu arquivo está pronto</h1>
             <div id="whiteSquare" class="shadow"></div>
             <div id="graySquare">
-
-                <form action="scripts/upload.php" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="inputFile" class="inputFile">
-                    <input type="submit" value="Enviar Arquivo" name="submit" class="blueButton">
+                <form action="scripts/uploads/callConvert.php" method="POST" enctype="multipart/form-data">
+                    <input class="blueButton" type="submit" value="Converter"/>
                 </form>
             </div>
         </div>
         <div class="bottom"></div>
-    </div>
+    </div>   
 </body>
 </html>

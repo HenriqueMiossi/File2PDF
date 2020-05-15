@@ -24,7 +24,7 @@ if (file_exists($target_file)) {
 
 // Permite certos tipos de arquivos
 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-  echo "Desculpe, somente arquivos JPG, JPEG e PNG são permitidos. ";
+  echo "Somente arquivos JPG, JPEG e PNG são permitidos. ";
   $uploadOk = 0;
 }
 
@@ -35,6 +35,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["inputFile"]["tmp_name"], $target_file)) {
     echo "O arquivo ". basename( $_FILES["inputFile"]["name"]). " foi enviado. ";
+    header("location: ../convert.html");
   } else {
     echo "Desculpe, houve um erro ao enviar seu arquivo. ";
   }
