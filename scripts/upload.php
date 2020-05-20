@@ -1,4 +1,6 @@
 <?php
+shell_exec('./remove.sh');
+
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["inputFile"]["name"]);
 $uploadOk = 1;
@@ -14,12 +16,6 @@ if(isset($_POST["submit"])) {
     $uploadOk = 0;
     header("location: ../error.html");
   }
-}
-
-// Checa se o arquivo já existe
-if (file_exists($target_file)) {
-  $uploadOk = 0;
-  header("location: ../error.html");
 }
 
 // Permite certos tipos de arquivos
