@@ -1,5 +1,5 @@
 <?php
-shell_exec('./convertImage.sh');
+shell_exec('./convertText.sh');
 
 sleep(0.5);
 
