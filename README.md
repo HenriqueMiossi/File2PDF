@@ -5,7 +5,7 @@ Projeto de website que tem o objetivo converter arquivos de imagem para PDF. É 
 ## Requisitos
 
 * PHP 7 ou superior instalado no sistema
-* O xdg-open é necessário apenas para iniciar um host local automaticamente e não é essencial para o funcionamento do website
+* Sistema operacional baseado em unix
 
 ## Instalação
 
@@ -15,36 +15,37 @@ Projeto de website que tem o objetivo converter arquivos de imagem para PDF. É 
 git clone https://github.com/HenriqueMiossi/File2PDF
 ```
 
-* Instale o PHP em sua máquina caso ainda não o tenha instalado. Para conferir qual versão está instalada digite: 
+* Entre no diretório installationAndAutorun
 
 ```
-php --version
+cd installationAndAutorun
 ```
 
-* Verifique se você possui o xdg-open instalado. Caso possua, prossiga para a Execução Automática, caso contrário, será necessário instalar o pacote xdg-utils ou prosseguir para a Execução Manual.
+* Instale as dependências necessárias de acordo com seu sistema: 
 
 ```
-xdg-open --version
+./installPackagesDebian.sh
+```
+```
+./installPackagesFedora.sh
 ```
 
 ## Executando Automaticamente
 
-* Entre no diretório do projeto e execute o script de inicialização, que irá rodar o servidor e abrir seu navegador padrão:
+* Rode o script de autoexecução:
 
 ```
-./startLocalHost.sh
+./startLocalHost
 ```
 
-## Executando Manualmente
+## Execução Manual
 
-* Crie um host local com o PHP:
-
+* Caso o script não funcione, volte ao diretório raíz e execute manualmente:
 ```
 php -S localhost:8000
 ```
 
-* Abra seu navegador de preferência (Chrome recomendado) e entre no servidor local digitando o seguinte link:
-
+* Abra seu navegador de preferência (recomendado baseados em chromium, como o chrome, edge, brave...) e acesse:
 ```
 http://localhost:8000
 ```
