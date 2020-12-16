@@ -1,27 +1,27 @@
 # File2PDF
 
-Projeto de website que tem o objetivo converter arquivos de imagem para PDF. É um trabalho da faculdade e está em seus estágios iniciais do desenvolvimento.
+Simple website project which aims to convert image and text files to PDF. This was made for a university assignment.
 
-## Requisitos
+## Requisites
 
-* PHP 7 ou superior instalado no sistema
-* Sistema operacional baseado em unix
+* PHP 7 or higher
+* Preferably an unix based OS
 
-## Instalação
+## Installation
 
-* Clone o repositório para sua máquina com:
+* Clone this repo to your machine with:
 
 ```
 git clone https://github.com/HenriqueMiossi/File2PDF
 ```
 
-* Entre no diretório installationAndAutorun
+* Proceed to installationAndAutorun directory:
 
 ```
 cd installationAndAutorun
 ```
 
-* Instale as dependências necessárias de acordo com seu sistema: 
+* Install the needed dependencies acording to your system: 
 
 ```
 ./installPackagesDebian.sh
@@ -30,22 +30,22 @@ cd installationAndAutorun
 ./installPackagesFedora.sh
 ```
 
-## Executando Automaticamente
+## Autorun
 
-* Rode o script de autoexecução:
+* Run the autorun script:
 
 ```
 ./startLocalHost
 ```
 
-## Execução Manual
+## Manual Running
 
-* Caso o script não funcione, volte ao diretório raíz e execute manualmente:
+* In case the autorun script stops working, go back to the root directory and run manually:
 ```
 php -S localhost:8000
 ```
 
-* Abra seu navegador de preferência (recomendado baseados em chromium, como o chrome, edge, brave...) e acesse:
+* Open your preferred browser (chromium based recommended) and access:
 ```
 http://localhost:8000
 ```
